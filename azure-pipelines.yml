@@ -16,7 +16,7 @@ steps:
       az acr login -n mylabacr13
       docker push mylabacr13.azurecr.io/web-game:tag
 
-- script: cat 01_kubernetes_aks/app-deploy.yaml
+- script: cat 01_kubernetes_aks/app-deploy.yml
 
 - task: Kubernetes@1
   inputs:
